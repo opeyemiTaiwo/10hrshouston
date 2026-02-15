@@ -284,29 +284,31 @@ function Purpose() {
    ═══════════════════════════════════════════════════════════ */
 function ThemeRationale() {
   return (
-    <section className="section section--dark section--skyline">
+    <section className="section section--dark section--skyline" style={{ padding: "120px 40px" }}>
       <div className="section__overlay" />
       <HoustonSkyline opacity={0.06} />
       <div className="container container--medium relative-z2">
         <FadeIn>
           <p className="section__label">THEME RATIONALE</p>
-          <h2 className="section__title section__title--light">
+          <h2 className="section__title section__title--light" style={{ marginBottom: 48 }}>
             "WITNESSES: AND THEY
             <br />
             TOOK THE CITY"
           </h2>
         </FadeIn>
-        <div className="split-columns">
-          <FadeIn delay={0.15}>
-            <p className="body-text body-text--light">
+        <div className="theme-columns">
+          <FadeIn delay={0.15} className="theme-column">
+            <div className="theme-column__accent" />
+            <p className="body-text body-text--light" style={{ margin: 0 }}>
               The theme is rooted in Acts 1:8 and the apostolic impact of the
               early Church on entire cities and civilizations. A witness is one
               who embodies and demonstrates the reality of Christ and His
               Kingdom in word, power, and lifestyle.
             </p>
           </FadeIn>
-          <FadeIn delay={0.3}>
-            <p className="body-text body-text--light">
+          <FadeIn delay={0.3} className="theme-column">
+            <div className="theme-column__accent" />
+            <p className="body-text body-text--light" style={{ margin: 0 }}>
               In the contemporary context, cities are shaped by interconnected
               systems — governance, education, media, business, culture, and
               increasingly, technology and digital infrastructure. To "take the
@@ -369,18 +371,25 @@ function SevenMountains() {
    ═══════════════════════════════════════════════════════════ */
 function ScienceTech() {
   return (
-    <section className="section section--white">
+    <section className="section section--white" style={{ padding: "120px 40px" }}>
       <div className="container">
-        <div className="split-columns split-columns--wide">
-          <div>
+        <div className="scitech">
+          <div className="scitech__left">
             <FadeIn>
               <p className="section__label">SCIENCE & TECHNOLOGY</p>
+            </FadeIn>
+            <FadeIn delay={0.1}>
               <h3 className="cyan-statement">THE LAB IS KINGDOM TERRITORY.</h3>
+            </FadeIn>
+            <FadeIn delay={0.2}>
               <h3 className="cyan-statement">THE STUDIO IS KINGDOM TERRITORY.</h3>
-              <h3 className="cyan-statement">THE INNOVATION HUB IS KINGDOM TERRITORY.</h3>
+            </FadeIn>
+            <FadeIn delay={0.3}>
+              <h3 className="cyan-statement" style={{ marginBottom: 0 }}>THE INNOVATION HUB IS KINGDOM TERRITORY.</h3>
             </FadeIn>
           </div>
-          <div>
+          <div className="scitech__divider" />
+          <div className="scitech__right">
             <FadeIn delay={0.2}>
               <p className="body-text">
                 A distinctive focus of this convocation is the unveiling of the
@@ -394,7 +403,7 @@ function ScienceTech() {
               </p>
             </FadeIn>
             <FadeIn delay={0.35}>
-              <p className="body-text">
+              <p className="body-text" style={{ marginBottom: 0 }}>
                 This gathering will prophetically restore the understanding that
                 the laboratory, the studio, the classroom, and the innovation
                 hub are as much Kingdom territory as the prayer altar. It will
