@@ -94,6 +94,19 @@ function Navbar() {
     return () => window.removeEventListener("scroll", handler);
   }, []);
 
+  // Close menu on resize to desktop
+  useEffect(() => {
+    const handler = () => { if (window.innerWidth > 768) setMenuOpen(false); };
+    window.addEventListener("resize", handler);
+    return () => window.removeEventListener("resize", handler);
+  }, []);
+
+  // Prevent body scroll when menu is open
+  useEffect(() => {
+    document.body.style.overflow = menuOpen ? "hidden" : "";
+    return () => { document.body.style.overflow = ""; };
+  }, [menuOpen]);
+
   const links = [
     { label: "Purpose", href: "#purpose" },
     { label: "Seven Mountains", href: "#mountains" },
@@ -104,14 +117,15 @@ function Navbar() {
   ];
 
   return (
-    <nav
-      className={`navbar ${scrolled ? "navbar--scrolled" : ""}`}
-    >
+    <nav className={`navbar ${scrolled ? "navbar--scrolled" : ""} ${menuOpen ? "navbar--open" : ""}`}>
       <div className="navbar__inner">
         {/* Logo */}
         <a href="#top" className="navbar__logo">
-          <span className="navbar__logo-sub">10 HOURS</span>
-          <span className="navbar__logo-main">HOUSTON</span>
+          <img
+            src={process.env.PUBLIC_URL + "/images/logo.png"}
+            alt="10 Hours Houston"
+            className="navbar__logo-img"
+          />
         </a>
 
         {/* Desktop Links */}
@@ -126,19 +140,35 @@ function Navbar() {
           </a>
         </div>
 
-        {/* Mobile menu button */}
+        {/* Hamburger button */}
         <button
           onClick={() => setMenuOpen(!menuOpen)}
-          className="navbar__mobile-btn"
+          className={`hamburger ${menuOpen ? "hamburger--active" : ""}`}
           aria-label="Toggle menu"
+          aria-expanded={menuOpen}
         >
-          {menuOpen ? "✕" : "☰"}
+          <span className="hamburger__line" />
+          <span className="hamburger__line" />
+          <span className="hamburger__line" />
         </button>
       </div>
 
-      {/* Mobile menu */}
-      {menuOpen && (
-        <div className="navbar__mobile-menu">
+      {/* Mobile overlay */}
+      <div
+        className={`navbar__overlay ${menuOpen ? "navbar__overlay--visible" : ""}`}
+        onClick={() => setMenuOpen(false)}
+      />
+
+      {/* Mobile slide-in menu */}
+      <div className={`navbar__mobile-menu ${menuOpen ? "navbar__mobile-menu--open" : ""}`}>
+        <div className="navbar__mobile-header">
+          <img
+            src={process.env.PUBLIC_URL + "/images/logo.png"}
+            alt="10 Hours Houston"
+            className="navbar__mobile-logo"
+          />
+        </div>
+        <div className="navbar__mobile-links">
           {links.map((l) => (
             <a
               key={l.label}
@@ -149,11 +179,11 @@ function Navbar() {
               {l.label}
             </a>
           ))}
-          <a href="#register" onClick={() => setMenuOpen(false)} className="navbar__cta" style={{ marginTop: 8 }}>
-            REGISTER NOW
-          </a>
         </div>
-      )}
+        <a href="#register" onClick={() => setMenuOpen(false)} className="navbar__mobile-cta">
+          REGISTER NOW
+        </a>
+      </div>
     </nav>
   );
 }
@@ -653,8 +683,11 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="footer__logo">
-        <span className="footer__logo-sub">10 HOURS</span>
-        <span className="footer__logo-main">HOUSTON</span>
+        <img
+          src={process.env.PUBLIC_URL + "/images/logo.png"}
+          alt="10 Hours Houston"
+          className="footer__logo-img"
+        />
       </div>
       <div className="footer__right">
         <p className="footer__tagline">
