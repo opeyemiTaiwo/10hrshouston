@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/10hrshouston/static/css/main.ff6ee5f1.css",
-    "main.js": "/10hrshouston/static/js/main.cd5787bb.js",
+    "main.css": "/10hrshouston/static/css/main.0c684dce.css",
+    "main.js": "/10hrshouston/static/js/main.796b4b99.js",
     "index.html": "/10hrshouston/index.html",
-    "main.ff6ee5f1.css.map": "/10hrshouston/static/css/main.ff6ee5f1.css.map",
-    "main.cd5787bb.js.map": "/10hrshouston/static/js/main.cd5787bb.js.map"
+    "main.0c684dce.css.map": "/10hrshouston/static/css/main.0c684dce.css.map",
+    "main.796b4b99.js.map": "/10hrshouston/static/js/main.796b4b99.js.map"
   },
   "entrypoints": [
-    "static/css/main.ff6ee5f1.css",
-    "static/js/main.cd5787bb.js"
+    "static/css/main.0c684dce.css",
+    "static/js/main.796b4b99.js"
   ]
 }
