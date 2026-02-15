@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/10hrshouston/static/css/main.d58b95b7.css",
+    "main.js": "/10hrshouston/static/js/main.15f86229.js",
+    "index.html": "/10hrshouston/index.html",
+    "main.d58b95b7.css.map": "/10hrshouston/static/css/main.d58b95b7.css.map",
+    "main.15f86229.js.map": "/10hrshouston/static/js/main.15f86229.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d58b95b7.css",
+    "static/js/main.15f86229.js"
+  ]
+}
