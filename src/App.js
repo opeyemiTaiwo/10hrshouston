@@ -264,16 +264,6 @@ function Purpose() {
             of Science and Technology as a critical arena for Kingdom impact.
           </p>
         </FadeIn>
-        <FadeIn delay={0.3}>
-          <p className="body-text">
-            Participants will be equipped to function as authentic witnesses of
-            Christ not only within church spaces, but across boardrooms,
-            classrooms, research laboratories, policy environments, creative
-            industries, digital platforms, and innovation ecosystems — carrying
-            God's presence, wisdom, and power into the systems that shape
-            culture and the future.
-          </p>
-        </FadeIn>
       </div>
     </section>
   );
@@ -309,10 +299,7 @@ function ThemeRationale() {
           <FadeIn delay={0.3} className="theme-column">
             <div className="theme-column__accent" />
             <p className="body-text body-text--light" style={{ margin: 0 }}>
-              In the contemporary context, cities are shaped by interconnected
-              systems — governance, education, media, business, culture, and
-              increasingly, technology and digital infrastructure. To "take the
-              city" in this generation is to establish Kingdom influence within
+              To "take the city" in this generation is to establish Kingdom influence within
               these systems so that values, innovations, and policies reflect
               the wisdom and righteousness of God.
             </p>
@@ -392,18 +379,6 @@ function ScienceTech() {
           <div className="scitech__right">
             <FadeIn delay={0.2}>
               <p className="body-text">
-                A distinctive focus of this convocation is the unveiling of the
-                Church's prophetic and historical heritage in science,
-                innovation, and technological advancement. Scripture and history
-                reveal that God has always endowed His people with exceptional
-                wisdom, craftsmanship, and systems intelligence — from Bezalel's
-                divine skill in design, to Joseph's economic architecture,
-                Daniel's governmental and scientific insight, and Solomon's
-                technological and infrastructural innovation.
-              </p>
-            </FadeIn>
-            <FadeIn delay={0.35}>
-              <p className="body-text" style={{ marginBottom: 0 }}>
                 This gathering will prophetically restore the understanding that
                 the laboratory, the studio, the classroom, and the innovation
                 hub are as much Kingdom territory as the prayer altar. It will
@@ -427,7 +402,7 @@ function WhyHouston() {
   const cards = [
     "Prophetically interpret God's purpose and timing for Houston.",
     "Pray into the alignment of spiritual and institutional leadership within the city.",
-    "Commission participants as Kingdom witnesses specifically assigned to Houston, charged with influencing its industries, communities, and governance structures.",
+    "Commission participants are charged with influencing its industries, communities, and governance structures.",
   ];
 
   return (
@@ -445,10 +420,7 @@ function WhyHouston() {
         </FadeIn>
         <FadeIn delay={0.15}>
           <p className="body-text body-text--light" style={{ marginBottom: 48, maxWidth: 900 }}>
-            As a global hub for energy, medicine, aerospace, technology,
-            education, and cultural diversity, Houston occupies a unique
-            position in shaping national and international systems. A dedicated
-            session will be centered on discerning and declaring the strategic
+            A dedicated session will be centered on discerning and declaring the strategic
             mandate of God for Houston in this season.
           </p>
         </FadeIn>
@@ -484,19 +456,19 @@ const programPhases = [
   {
     title: "Encounter",
     subtitle: "Fire and Consecration",
-    desc: "A season of deep worship and corporate intercession, calling participants into consecration, repentance, and renewed alignment with God's heart for their generation, their cities, and the nations.",
+    desc: "A season of deep worship and corporate intercession.",
     icon: "🔥",
   },
   {
     title: "Revelation",
     subtitle: "Vision for the Mountains",
-    desc: "Prophetic and apostolic teaching that establishes identity as witnesses and ambassadors of Christ, assignment to influence the seven mountains of society, and strategic insight into the role of science, technology, and innovation in shaping the future.",
+    desc: "Prophetic and apostolic teaching that establishes identity as witnesses and ambassadors of Christ.",
     icon: "👁️",
   },
   {
     title: "Heritage & Commissioning",
     subtitle: "Deployment",
-    desc: "A focused segment unveiling God's legacy in science and technology within the Body of Christ, followed by a formal commissioning of participants across all spheres — releasing them into their fields and into the city of Houston with spiritual authority, wisdom, and a mandate for Kingdom impact.",
+    desc: "A focused segment unveiling God's legacy in science and technology within the Body of Christ.",
     icon: "🕊️",
   },
 ];
@@ -639,14 +611,9 @@ function CoreMessage() {
         </FadeIn>
         <FadeIn delay={0.2}>
           <p className="body-text" style={{ fontSize: 19 }}>
-            10 Hours Houston: Witnesses declares that revival is not confined to
-            the sanctuary, but is expressed through transformed people who
-            transform systems and cities. God is commissioning a generation to
-            carry His presence, wisdom, and power into every mountain of
-            influence — particularly into the realm of science and technology —
-            and specifically into the city of Houston, so that it may be taken
-            for Christ and shaped according to the values and purposes of His
-            Kingdom.
+            God is commissioning a generation to carry His presence, wisdom, and power into every sphere of influence, 
+            especially science and technology, in Houston to advance His Kingdom.
+            
           </p>
         </FadeIn>
       </div>
